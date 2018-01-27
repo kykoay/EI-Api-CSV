@@ -38,5 +38,5 @@ class OpenEIData(object):
 	def get_csv(self):
 		self.filename = '{0}.csv'.format(self.eia)
 		self.out = open(self.filename,"wb")
-		self.df_csv.to_csv(self.filename,index=False)
+		self.df_csv.to_csv(self.filename,index=True)
 		self.out.close()

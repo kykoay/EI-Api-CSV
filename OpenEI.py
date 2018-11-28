@@ -22,7 +22,7 @@ pip install pyOpenSSL ndg-httpsclient pyasn1
 """
 
 class OpenEIData(object):
-	def __init__(self,eia,offset,sector='Industrial',version='latest',api_key='JNnPlky1mNMJVfAzDA5EkWACdabG08aOE0ex6qCN',detail='full'):
+	def __init__(self,eia,offset,sector='Industrial',version='latest',api_key='',detail='full'): #edit and add your api key here
 		self.version = version # by default we use the latest version but this can be overriden
 		self.api_key = api_key
 		self.eia = str(eia) 
